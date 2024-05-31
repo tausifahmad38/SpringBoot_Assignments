@@ -1,0 +1,16 @@
+<h1>Bank of India</h1>
+<table style="border: 1px solid #ddd;">
+
+	<thead>
+		<tr>
+			<th>Branch Name</th>
+			<th>Address</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="branch : ${branches}">
+			<td style="border: 1px solid #ddd;"  th:text="${branch.name}"></td>
+			<td style="border: 1px solid #ddd;" th:text="${branch.address}"></td>
+		</tr>
+	</tbody>
+</table>
